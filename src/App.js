@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import InfoCard from './components/InfoCard'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InfoCard
+        lastName={ "Diez" }
+        firstName={ "Pablo" }
+        hairColor={ "Dark brown" }
+        // age is being passed in as default value for state
+        age={ 32 }
+      />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
